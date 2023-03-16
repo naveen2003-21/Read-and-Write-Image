@@ -23,59 +23,65 @@ End the program and close the output image windows.
 ### Register Number: 
 i) #To Read,display the image
 ```
+import cv2
+import matplotlib.pyplot as plt
+from google.colab.patches import cv2_imshow
+import random
+image=cv2.imread("bike.jpg",-1)
+cv2_imshow(image
   
 
 ```
 ii) #To write the image
 ```
-
+image= cv2.imread('bike.jpg',-1)
+cv2.imwrite('bike.jpg',image)
 
 
 ```
 iii) #Find the shape of the Image
-```python3
-
-
+```
+print(image.shape)
 
 ```
 iv) #To access rows and columns
 
-```python3
-
-
+```
+image = cv2.imread('bike.jpg',-1)
+for i in range(150):
+    for j in range(image.shape[1]):
+        image[i][j] = [random.randint(0,255),random.randint(0,255),random.randint(0,255)]
+cv2_imshow(image)
+cv2.waitKey(0)
 
 ```
 v) #To cut and paste portion of image
-```python3
-
-
-
 ```
-
+image= cv2.imread('bike.jpg',-1)
+new = image[200:450,200:450]
+image[150:400,150:400] = new
+cv2_imshow(image)
+cv2.waitKey(0)
+```
 ## Output:
 
 ### i) Read and display the image
-
-<br>
-<br>
+![output](d1.png)
 
 ### ii)Write the image
 
-<br>
-<br>
+![](d2.png)
+
 
 ### iii)Shape of the Image
-
-<br>
-<br>
+![](d3.png)
 
 ### iv)Access rows and columns
-<br>
-<br>
+
+![](d1.png)
 
 ### v)Cut and paste portion of image
-<br>
-<br>
+
 
 ## Result:
 Thus the images are read, displayed, and written successfully using the python program.
