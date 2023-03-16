@@ -19,8 +19,8 @@ Use imwrite(filename, image) to write the image.
 ### Step5:
 End the program and close the output image windows.
 ## Program:
-### Developed By:
-### Register Number: 
+### Developed By: A Naveen Kumar
+### Register Number: 212221240032
 i) #To Read,display the image
 ```
 import cv2
@@ -28,8 +28,12 @@ import matplotlib.pyplot as plt
 from google.colab.patches import cv2_imshow
 import random
 image=cv2.imread("bike.jpg",-1)
+<<<<<<< HEAD
 cv2_imshow(image
   
+=======
+cv2_imshow(image)
+>>>>>>> 00002516edc7032a779b81a21790773e9ff0712d
 
 ```
 ii) #To write the image
@@ -53,9 +57,24 @@ for i in range(150):
         image[i][j] = [random.randint(0,255),random.randint(0,255),random.randint(0,255)]
 cv2_imshow(image)
 cv2.waitKey(0)
+<<<<<<< HEAD
 
 ```
 v) #To cut and paste portion of image
+=======
+
+
+```
+v) #To cut and paste portion of image
+```
+image= cv2.imread('bike.jpg',-1)
+new = image[200:450,200:450]
+image[150:400,150:400] = new
+cv2_imshow(image)
+cv2.waitKey(0)
+
+
+>>>>>>> 00002516edc7032a779b81a21790773e9ff0712d
 ```
 image= cv2.imread('bike.jpg',-1)
 new = image[200:450,200:450]
