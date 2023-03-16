@@ -66,22 +66,24 @@ cv2.waitKey(0)
 ## Output:
 
 ### i) Read and display the image
-![output](d1.png)
+
+<br>![output](d1.png)
 
 ### ii)Write the image
 
-![output](d2.png)
+![output](d3.png)
 
 
 ### iii)Shape of the Image
-![](d3.png)
 
+![output](d2.png)
 ### iv)Access rows and columns
 
-![](d1.png)
+![output](d4.png)
 
 ### v)Cut and paste portion of image
 
+![output](d5.png)
 
 ## Result:
 Thus the images are read, displayed, and written successfully using the python program.
