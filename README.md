@@ -70,7 +70,7 @@ cv2.waitKey(0)
 
 ### ii)Write the image
 
-![](d2.png)
+![output](d2.png)
 
 
 ### iii)Shape of the Image
